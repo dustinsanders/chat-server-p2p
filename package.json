@@ -4,21 +4,35 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "server": "node ./server/index.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier 'pages/**' 'src/**' --write"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.7",
+    "@react-hook/debounce": "^4.0.0",
+    "express": "^4.18.1",
+    "gun": "^0.2020.1237",
+    "nanoid": "^4.0.0",
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.4",
+    "superstruct": "^0.16.0"
   },
   "devDependencies": {
+    "@types/express": "^4.17.13",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
     "typescript": "4.7.4"
   }
 }
